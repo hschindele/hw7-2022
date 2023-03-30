@@ -2,6 +2,8 @@ var video = document.querySelector("#player1");
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window");
+	video.volume = slider.value/100;
+	document.getElementById("volume").innerHTML = slider.value  +  "%";
 	video.autoplay = false;
 	console.log("Autoplay is set to false");
 	video.loop = false;
